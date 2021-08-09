@@ -1,0 +1,7 @@
+---
+# vars file for roles/client-ntp
+number:
+  - 0
+  - 1
+  - 2
+  
