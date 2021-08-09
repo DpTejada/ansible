@@ -1,0 +1,9 @@
+---
+- hosts: 192.168.0.219 #server b
+  become: yes
+  tasks:
+    - name: Curl serverb
+      shell:
+        cmd: curl http://192.168.0.219
+
+  

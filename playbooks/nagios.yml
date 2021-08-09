@@ -1,0 +1,7 @@
+---
+- name: Runing nagios roles/oleg.nagios-server
+  hosts: 192.168.0.220
+  become: yes
+  roles: 
+    - roles/oleg.nagios-server
+
