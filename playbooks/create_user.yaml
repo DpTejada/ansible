@@ -1,0 +1,16 @@
+---
+- name: Creating user using ansible
+  hosts: all 
+  become: yes
+  tasks:
+    - name: Adding user to a system
+      user:
+        name: john
+        append: yes
+        groups: wheel
+        comment: "Test user"
+        generate_ssh_key: yes
+        home: "/home/johny"
+        password: $6$gbmOjV4KXaBTzD/x$fuuV3.A1eSOMbGKJuNneOZ1xjt8H3OEv1rqMAYI/Zt6fYkUcYdYm3Cnug0GmbNwCKk32rA7vAWVswa6cFygi.0
+        shell: "/usr/bin/sh"
+        uid: 2000
